@@ -13,18 +13,20 @@ describe 'sysctl_conf::entry' do
 
   context 'present' do
     let(:params) do
-      { :value => '1' }
+      { value: '1' }
     end
 
-    it { is_expected.to contain_sysctl('net.ipv4.ip_forward').with(
-      :value  => '1',
-      :ensure   => 'present'
-    ) }
+    it {
+      is_expected.to contain_sysctl('net.ipv4.ip_forward').with(
+        value: '1',
+        ensure: 'present',
+      )
+    }
   end
 
   context 'absent' do
     let(:params) do
-      { :ensure  => 'absent' }
+      { ensure: 'absent' }
     end
 
     it { is_expected.to contain_sysctl('net.ipv4.ip_forward').with_ensure('absent') }
