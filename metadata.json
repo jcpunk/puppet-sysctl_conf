@@ -4,12 +4,8 @@
   "author": "deric",
   "summary": "Hiera based sysctl.conf management",
   "license": "Apache-2.0",
-  "source": "",
+  "source": "https://github.com/deric/puppet-sysctl_conf",
   "dependencies": [
-    {
-      "name": "puppetlabs-stdlib",
-      "version_requirement": ">= 4.6.0 < 7.0.0"
-    },
     {
       "name": "herculesteam-augeasproviders_core",
       "version_requirement": ">= 2.0 < 3.0.0"

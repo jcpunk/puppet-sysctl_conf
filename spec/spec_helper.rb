@@ -51,4 +51,5 @@ def ensure_module_defined(module_name)
   end
 end
 
+at_exit { RSpec::Puppet::Coverage.report! }
 # 'spec_overrides' from sync.yml will appear below this line

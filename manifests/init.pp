@@ -1,13 +1,14 @@
 # @summary Simple sysctl entries management
 #
-# A description of what this class does
+# Assigns given sysctl key a defined value
 #
 # @example
 #   include sysctl_conf
 class sysctl_conf (
   Hash $values = {},
+  Hash $defaults = {},
   ){
 
-  create_resources(sysctl_conf::entry, $values)
+  create_resources(sysctl_conf::entry, $values, $defaults)
 
 }
