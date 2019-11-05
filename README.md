@@ -1,5 +1,9 @@
 # Puppet sysctl_conf
 
+[![Puppet
+Forge](http://img.shields.io/puppetforge/v/deric/sysctl_conf.svg)](https://forge.puppetlabs.com/deric/sysctl_conf) [![Build Status](https://travis-ci.org/deric/puppet-sysctl_conf.png?branch=master)](https://travis-ci.org/deric/puppet-sysctl_conf) [![Puppet Forge
+Downloads](http://img.shields.io/puppetforge/dt/deric/sysctl_conf.svg)](https://forge.puppetlabs.com/deric/sysctl_conf/scores)
+
 A Hiera based `sysctl.conf` management.
 
 ## Description
@@ -32,7 +36,7 @@ classes:
 
 ### Merge behavior
 
-Cofigure suitable [merge behavior](https://puppet.com/docs/puppet/latest/hiera_merging.html) for you needs:
+Cofigure [merge behavior](https://puppet.com/docs/puppet/latest/hiera_merging.html) suitable for you needs:
 
 ```yaml
 lookup_options:
@@ -96,7 +100,11 @@ net.ipv4.ip_forward:
 
 ## Documentation
 
-Generate documentation in Markdown:
+Generate documentation:
 ```
-mkdir -p doc; puppet strings generate --format markdown --out doc/sysctl_conf.md
+$ rake strings:generate
+```
+in markdown:
+```
+$ puppet strings generate --format markdown --out sysctl_conf.md
 ```
