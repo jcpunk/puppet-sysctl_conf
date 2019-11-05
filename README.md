@@ -4,7 +4,7 @@
 Forge](http://img.shields.io/puppetforge/v/deric/sysctl_conf.svg)](https://forge.puppetlabs.com/deric/sysctl_conf) [![Build Status](https://travis-ci.org/deric/puppet-sysctl_conf.png?branch=master)](https://travis-ci.org/deric/puppet-sysctl_conf) [![Puppet Forge
 Downloads](http://img.shields.io/puppetforge/dt/deric/sysctl_conf.svg)](https://forge.puppetlabs.com/deric/sysctl_conf/scores)
 
-A Hiera based `sysctl.conf` management.
+Configure Linux kernel parameters at runtime via Puppet's Hiera based `sysctl.conf` management.
 
 ## Description
 
