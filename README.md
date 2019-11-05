@@ -24,11 +24,13 @@ Either include `sysctl_conf` directly in your node's definition:
 include sysctl_conf
 ```
 or via Hiera call, e.g.:
+
 ```puppet
 lookup('classes', {merge => unique}).include
 ```
+
 then make sure to include `sysctl_conf` in `classes` definition:
-```
+
 ```yaml
 classes:
   - sysctl_conf
