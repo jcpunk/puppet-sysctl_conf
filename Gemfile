@@ -26,6 +26,7 @@ group :development do
   gem "puppet-module-posix-default-r#{minor_version}", '~> 0.3', require: false, platforms: [:ruby]
   gem "puppet-module-posix-dev-r#{minor_version}", '~> 0.3',     require: false, platforms: [:ruby]
   gem 'puppet-blacksmith', git: 'https://github.com/deric/puppet-blacksmith', branch: 'tag-order'
+  gem 'pdk', '> 1.0'
 end
 
 puppet_version = ENV['PUPPET_GEM_VERSION']
