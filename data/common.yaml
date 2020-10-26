@@ -1,1 +1,9 @@
 ---
+lookup_options:
+  sysctl_conf::values:
+    merge:
+      strategy: deep
+      merge_hash_arrays: true
+  sysctl_conf::entry:
+    merge:
+      strategy: hash
