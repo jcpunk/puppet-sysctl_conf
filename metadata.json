@@ -1,6 +1,6 @@
 {
   "name": "deric-sysctl_conf",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "author": "deric",
   "summary": "Configure Linux kernel parameters at runtime via Hiera configs",
   "license": "Apache-2.0",
