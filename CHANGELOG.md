@@ -1,5 +1,10 @@
 # Changelog
 
+## Release 0.2.1
+
+ - Allow newer augeas dependencies
+ - Updated supported systems
+
 ## Release 0.2.0
 
  - Include default merge options (#2)
