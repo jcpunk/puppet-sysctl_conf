@@ -8,7 +8,7 @@
   "dependencies": [
     {
       "name": "herculesteam-augeasproviders_core",
-      "version_requirement": ">= 2.0.0 < 3.0.0"
+      "version_requirement": ">= 2.0.0 < 4.0.0"
     },
     {
       "name": "herculesteam-augeasproviders_sysctl",
@@ -45,10 +45,9 @@
     {
       "operatingsystem": "Debian",
       "operatingsystemrelease": [
-        "7",
-        "8",
         "9",
-        "10"
+        "10",
+        "11"
       ]
     },
     {
