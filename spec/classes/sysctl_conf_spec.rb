@@ -63,7 +63,7 @@ describe 'sysctl_conf' do
       }
     end
 
-    it "accepts integer" do
+    it 'accepts integer' do
       is_expected.to contain_sysctl('vm.overcommit_memory').with(
         value: 1,
         ensure: 'present',
