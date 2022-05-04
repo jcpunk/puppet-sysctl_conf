@@ -21,13 +21,13 @@
 #   Optional comment
 
 define sysctl_conf::entry (
-  String           $ensure  = 'present',
-  Boolean          $apply   = true,
-  Boolean          $persist = true,
-  Boolean          $silent  = false,
-  Optional[String] $value   = undef,
-  Optional[String] $comment = undef,
-  Optional[String] $target  = "/etc/sysctl.d/${title}.conf",
+  String                             $ensure  = 'present',
+  Boolean                            $apply   = true,
+  Boolean                            $persist = true,
+  Boolean                            $silent  = false,
+  Optional[Variant[String, Integer]] $value = undef,
+  Optional[String]                   $comment = undef,
+  Optional[String]                   $target  = "/etc/sysctl.d/${title}.conf",
 ){
 
   # herculesteam-augeasproviders_sysctl resource
