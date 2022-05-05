@@ -13,7 +13,7 @@ By default for each key (e.g. `net.ipv4.ip_forward`) creates a corresponding con
 ```yaml
 sysctl_conf::values:
   net.ipv4.ip_forward:
-    value: '1'
+    value: 1
 ```
 
 ## Setup
