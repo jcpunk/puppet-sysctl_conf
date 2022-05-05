@@ -8,14 +8,12 @@
 #
 # @param values
 #   Hash containing sysctl configuration keys and its values
-# @param defaluts
+# @param defaults
 #   Hash with default values for each `$values` entry.
 #
 class sysctl_conf (
   Hash $values = {},
   Hash $defaults = {},
-  ){
-
+) {
   create_resources(sysctl_conf::entry, $values, $defaults)
-
 }

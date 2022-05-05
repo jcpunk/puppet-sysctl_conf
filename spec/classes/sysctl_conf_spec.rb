@@ -52,6 +52,25 @@ describe 'sysctl_conf' do
     }
   end
 
+  context 'allow passing other types than string' do
+    let(:params) do
+      {
+        values: {
+          'vm.overcommit_memory': {
+            value: 1,
+          },
+        },
+      }
+    end
+
+    it 'accepts integer' do
+      is_expected.to contain_sysctl('vm.overcommit_memory').with(
+        value: 1,
+        ensure: 'present',
+      )
+    end
+  end
+
   context 'with full options' do
     let(:params) do
       {
