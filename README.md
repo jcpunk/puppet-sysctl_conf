@@ -52,14 +52,14 @@ lookup_options:
 ```yaml
 sysctl_conf::values:
   vm.overcommit_memory:
-    value: '1'
+    value: 1
 ```
 
 - ignore non-activated configuration option
 ```yaml
 sysctl_conf::values:
   "net.ipv6.conf.%{networking.primary}.disable_ipv6":
-    value: '1'
+    value: 1
     silent: true
 ```
 
@@ -74,14 +74,14 @@ sysctl_conf::values:
 ```yaml
 sysctl_conf::values:
   net.ipv6.conf.all.disable_ipv6:
-    value: '1'
+    value: 1
     persist: false
 ```
 - add comment
 ```yaml
 sysctl_conf::values:
   vm.swappiness:
-    value: '0'
+    value: 0
     comment: 'disable swap'
 ```
 
@@ -96,7 +96,7 @@ sysctl_conf::values:
 ```yaml
 net.ipv4.ip_forward:
   kernel.sem:
-    value: '1'
+    value: 1
     target: '/etc/sysctl.d/forwarding.conf'
 ```
 
