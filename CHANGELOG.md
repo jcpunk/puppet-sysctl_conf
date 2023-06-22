@@ -1,5 +1,9 @@
 # Changelog
 
+## Release XXXX
+
+ - Move dependencies to voxpupli augeasproviders
+
 ## Release 0.3.0 [2022-05-05]
 
  - Allow passing values as `Integer` (#3, [#5](https://github.com/deric/puppet-sysctl_conf/pull/5))
